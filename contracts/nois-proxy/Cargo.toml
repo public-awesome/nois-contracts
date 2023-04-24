@@ -22,6 +22,8 @@ library = []
 # that allow withdrawing funds.
 governance_owned = []
 
+default = ["governance_owned"]
+
 [dependencies]
 nois-protocol = { path = "../../packages/nois-protocol"}
 anything = { path = "../../packages/anything" }
