@@ -8,6 +8,22 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [0.13.2] - 2023-04-26
+
+### Fix
+
+- nois-proxy: Fix typo in `ExecuteMsg::Withdaw`/`SudoMsg::Withdaw`. Renamed to
+  `::Withdraw`.
+
+## [0.13.1] - 2023-04-25
+
+### Fix
+
+- nois-proxy: Embrace the use of empty `prices` lists to deactivate the proxy.
+  Turn a panic into an error when this happens.
+- all: Make all `ContractError`s `#[non_exhaustive]` since error cases can come
+  up over time.
+
 ## [0.13.0] - 2023-04-23
 
 ### Changed
@@ -126,7 +142,9 @@ and this project adheres to
 
 Base version for starting the CHANGELOG.
 
-[unreleased]: https://github.com/noislabs/nois-contracts/compare/v0.13.0...HEAD
+[unreleased]: https://github.com/noislabs/nois-contracts/compare/v0.13.2...HEAD
+[0.13.2]: https://github.com/noislabs/nois-contracts/compare/v0.13.1...v0.13.2
+[0.13.1]: https://github.com/noislabs/nois-contracts/compare/v0.13.0...v0.13.1
 [0.13.0]: https://github.com/noislabs/nois-contracts/compare/v0.12.0...v0.13.0
 [0.12.0]: https://github.com/noislabs/nois-contracts/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/noislabs/nois-contracts/compare/v0.10.2...v0.11.0
